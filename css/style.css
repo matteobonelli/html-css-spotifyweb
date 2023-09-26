@@ -30,6 +30,10 @@ body{
     margin-right: 30px;
     margin-left: 30px;
 }
+#px-5{
+    padding-left: 5px;
+    padding-right: 5px;
+}
 .px-10{
     padding-left: 10px;
     padding-right: 10px;
@@ -84,7 +88,7 @@ li a{
     cursor: pointer;
 }
 /* general utilities */
-.green-border{
+.green-border-horizontal{
     border: 1px solid var(--color-highlight);
     width: 35%;
     margin-top: 3px;
@@ -104,6 +108,10 @@ img{
 .align-center{
     align-items: center;
     align-content: center;
+}
+.aling-end{
+    align-items: end;
+    align-content: end;
 }
 .justify-center{
     justify-content: center;
@@ -161,6 +169,30 @@ main{
 }
 #call-to-action .btn:hover{
     transform: scale(1.1);
+}
+/* sidebar */
+.logo-container{
+    width: 70%;
+}
+.icons{
+    font-size: 1.5em;
+    padding-right: 3px;
+}
+.lateral-buttons-top li, .lateral-buttons-bottom li{
+    padding: 5px 0;
+}
+.lateral-buttons-top a{
+    padding: 0px 15px;
+}
+.home{
+    color: var(--color-white);
+}
+.highlighted{
+    border-left: 5px solid var(--color-highlight);
+}
+.fa-square-plus{
+    font-size: 3em;
+    padding-right: 8px;
 }
 
 /* main-content */
