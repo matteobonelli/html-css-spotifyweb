@@ -106,6 +106,7 @@ img{
     border-radius: 20px;
     width: 100%;
     position: relative;
+    min-width: 50px;
 }
 .bar-played{
     border: 2px solid var(--color-light-grey);
@@ -288,26 +289,37 @@ main{
 }
 /* playbar */
 .song-playing{
-    width: 300px
+    width: 300px;
+    min-width: 100px;
 }
 .cover-container-playbar{
+    min-width: 30px;
     width: 60px;
 }
 .fa-circle-play.icons{
     font-size: 2.2em;
+}
+.like i{
+    display: block;
 }
 .icons{
     font-size: 1.2em;
     padding: 3px 15px;
 }
 .play-bar{
-    width: 600px
+    width: 600px;
+    min-width: 100px;
+}
+.bar-container{
+    width: 60%;
+    padding-right: 20px;
 }
 .duration{
     padding-top: 0;
 }
 .volume{
     width: 300px;
+    min-width: 100px;
 }
 .cover-text-playbar a{
     text-decoration: none;
@@ -350,16 +362,12 @@ main{
 }
 
 /* media query */
-@media screen and (max-width:1200px){
+@media screen and (max-width:992px){
     .wrap{
         flex-wrap: wrap;
     }
-    .container-media{
-        max-width: 800px;
-        margin: 0 auto;
-    }
     #main-content li{
-        width: calc(100% / 5);
+        padding-bottom: 20px;
     }
     .col{
         width: calc(100% / 4 - 20px);
@@ -376,22 +384,21 @@ main{
     }
 }
 
-@media screen and (max-width:992px){
-    .container-media{
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    #main-content li{
-        width: calc(100% / 3);
-    }
+@media screen and (max-width:768px){
     .col{
         width: calc(100% / 2 - 20px);
     }
     .col-2{
         width: calc(100% / 2 - 20px);
     }
+    .bar-container{
+        display: none;
+    }
+    .justify-center-768{
+        justify-content: center;
+    }
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:576px){
     #sidebar{
         background-color: var(--color-black);
         width: 50px;
