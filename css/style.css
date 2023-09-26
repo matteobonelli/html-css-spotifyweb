@@ -30,6 +30,10 @@ body{
     margin-right: 30px;
     margin-left: 30px;
 }
+.py-5{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 #px-5{
     padding-left: 5px;
     padding-right: 5px;
@@ -183,11 +187,14 @@ main{
     transform: scale(1.1);
 }
 /* sidebar */
-#sidebar{
-    overflow-y: auto ;
-}
 .logo-container{
     width: 70%;
+}
+.logo-container-small{
+    display: none;
+}
+.lateral-buttons-small{
+    display: none;
 }
 .icon-container{
     width: 17%;
@@ -281,10 +288,10 @@ main{
 }
 /* playbar */
 .song-playing{
-    width: 300px;
+    width: 300px
 }
 .cover-container-playbar{
-    width: 20%;
+    width: 60px;
 }
 .fa-circle-play.icons{
     font-size: 2.2em;
@@ -294,7 +301,7 @@ main{
     padding: 3px 15px;
 }
 .play-bar{
-    width: 600px;
+    width: 600px
 }
 .duration{
     padding-top: 0;
@@ -340,4 +347,78 @@ main{
 }
 .bar:hover .fa-circle{
     display: block;
+}
+
+/* media query */
+@media screen and (max-width:1200px){
+    .wrap{
+        flex-wrap: wrap;
+    }
+    .container-media{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    #main-content li{
+        width: calc(100% / 5);
+    }
+    .col{
+        width: calc(100% / 4 - 20px);
+        margin-right: 20px;
+    }
+    .row.space-between{
+        justify-content: flex-start;
+    }
+    .row-2{
+        width: 100%;
+    }
+    .col-2{
+        width: calc(100% / 4 - 20px);
+    }
+}
+
+@media screen and (max-width:992px){
+    .container-media{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    #main-content li{
+        width: calc(100% / 3);
+    }
+    .col{
+        width: calc(100% / 2 - 20px);
+    }
+    .col-2{
+        width: calc(100% / 2 - 20px);
+    }
+}
+@media screen and (max-width:768px){
+    #sidebar{
+        background-color: var(--color-black);
+        width: 50px;
+    }
+    #call-to-action{
+        width: calc(100% - 50px);
+        left: 50px;
+    }
+    #main-content{
+        width: calc(100% - 50px);
+    }
+    .logo-container{
+        display: none;
+    }
+    .logo-container-small{
+        display: block;
+    }
+    .lateral-buttons-top{
+        display: none;
+    }
+    .lateral-buttons-bottom{
+        display: none;
+    }
+    .lateral-buttons-small{
+        display: block;
+    }
+    .icon-container-small{
+        width: 30px;
+    }
 }

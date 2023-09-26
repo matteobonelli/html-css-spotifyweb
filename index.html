@@ -22,6 +22,9 @@
                 <div class="logo-container px-20 py-10">
                     <img src="img/logo.svg" alt="spotify logo">
                 </div>
+                <div class="logo-container-small px-10 py-10">
+                    <img src="img/logo-small.svg" alt="spotify logo">
+                </div>
                 <div class="lateral-buttons text-grey py-10">
                     <ul class="lateral-buttons-top py-10 font-weight-bolder">
                         <li class="highlighted">
@@ -49,6 +52,15 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="lateral-buttons-small px-10">
+                        <div class="icon-container-small py-5">
+                            <img src="img/home.svg" alt="search">
+                        </div><div class="icon-container-small py-5">
+                            <img src="img/search.svg" alt="search">
+                        </div><div class="icon-container-small py-5">
+                            <img src="img/libreria.svg" alt="search">
+                        </div>
+                    </div>
                     <div class="lateral-buttons-bottom px-20 py-10">
                         <h4 class="text-white">PLAYLIST</h4>
                         <ul class="font-weight-bolder">
@@ -71,22 +83,25 @@
                 
             </nav>
             <div id="main-content">
-                <ul class="d-flex justify-center font-size-small font-weight-bolder">
-                    <li>
-                        <a href="#">IN EVIDENZA</a>
-                        <div class="d-flex justify-center">
-                            <div class="green-border-horizontal"></div>
-                        </div>
-                    </li>
-                    <li><a href="#">PODCAST</a></li>
-                    <li><a href="#">CLASSIFICHE</a></li>
-                    <li><a href="#">GENERI E MOOD</a></li>
-                    <li><a href="#">NUOVE USCITE</a></li>
-                    <li><a href="#">SCOPRI</a></li>
-                </ul>
+                <div class="container-media">
+                    <ul class="d-flex justify-center wrap align-center font-size-small font-weight-bolder">
+                        <li>
+                            <a href="#">IN EVIDENZA</a>
+                            <div class="d-flex justify-center">
+                                <div class="green-border-horizontal"></div>
+                            </div>
+                        </li>
+                        <li><a href="#">PODCAST</a></li>
+                        <li><a href="#">CLASSIFICHE</a></li>
+                        <li><a href="#">GENERI E MOOD</a></li>
+                        <li><a href="#">NUOVE USCITE</a></li>
+                        <li><a href="#">SCOPRI</a></li>
+                    </ul>
+                </div>
+                
                 <section id="#recently-played" class="py-10 px-20">
                     <h2 class="font-weight-bolder">Recently played</h2>
-                    <div class="row py-20 d-flex space-between stretch">
+                    <div class="row py-20 d-flex space-between wrap stretch">
                         <div class="col">
                             <div class="cover-container py-10">
                                 <img src="img/metal_lifting.jpg" alt="metal">
