@@ -275,9 +275,11 @@ main{
     font-size: 4.5em;
 }
 /* playbar */
-
+.song-playing{
+    width: 300px;
+}
 .cover-container-playbar{
-    width: 10%;
+    width: 20%;
 }
 .fa-circle-play.icons{
     font-size: 2.2em;
@@ -294,4 +296,22 @@ main{
 }
 .volume{
     width: 300px;
+}
+.cover-text-playbar a{
+    text-decoration: none;
+}
+.cover-text-playbar a:hover{
+    color: var(--color-white);
+    text-decoration: underline;
+}
+.like .fa-regular.fa-heart:hover, .like .fa-regular.fa-folder:hover{
+    cursor: pointer;
+    color: var(--color-white);
+}
+.fa-solid.icons:hover{
+    cursor: pointer;
+}
+.fa-circle-play.icons:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
