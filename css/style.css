@@ -101,11 +101,13 @@ img{
     background-color: var(--color-grey);
     border-radius: 20px;
     width: 100%;
+    position: relative;
 }
 .bar-played{
     border: 2px solid var(--color-light-grey);
     border-radius: 20px;
     width: 20%;
+    
 }
 /* flex */
 .d-flex{
@@ -198,7 +200,10 @@ main{
 .lateral-buttons{
     padding-bottom: 50%;
 }
-.lateral-buttons-top li, .lateral-buttons-bottom li{
+.lateral-buttons-top li{
+    padding: 5px 0;
+}
+.lateral-buttons-bottom li{
     padding: 10px 0;
 }
 .lateral-buttons-top a{
@@ -314,4 +319,25 @@ main{
 .fa-circle-play.icons:hover{
     cursor: pointer;
     transform: scale(1.2);
+}
+.bar:hover{
+    cursor: pointer;
+    
+}
+.bar:hover .bar-played{
+    border: 2px solid var(--color-highlight);
+    border-radius: 20px;
+    width: 20%;
+}
+.fa-circle{
+    display: none;
+    position: absolute;
+    bottom: -6px;
+    left: 82px;
+}
+.volume .fa-circle{
+    left: 20px;
+}
+.bar:hover .fa-circle{
+    display: block;
 }
