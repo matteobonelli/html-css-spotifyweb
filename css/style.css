@@ -26,6 +26,10 @@ body{
     height: 100%;
 }
 /* padding */
+.px-10{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .py-10{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -37,6 +41,10 @@ body{
 .px-20{
     padding-left: 20px;
     padding-right: 20px;
+}
+.py-30{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 /* text colors and utilities */
 .text-white{
@@ -51,8 +59,8 @@ body{
 .font-size-small{
     font-size: 0.8em;
 }
-.font-weight-bold{
-    font-weight: bolder;
+.font-weight-bolder{
+    font-weight: 700;
 }
 /* lists */
 ul{
@@ -77,6 +85,10 @@ li a{
     width: 35%;
     margin-top: 3px;
 }
+img{
+    width: 100%;
+    display: block;
+}
 /* flex */
 .d-flex{
     display: flex;
@@ -91,6 +103,13 @@ li a{
 }
 .justify-center{
     justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.stretch{
+    align-items: stretch;
+    align-content: stretch;
 }
 /* container */
 .wrapper{
@@ -141,9 +160,15 @@ main{
 }
 
 /* main-content */
+#main-content ul{
+    padding-bottom: 30px;
+}
 #main-content li{
     padding: 0px 15px;
 }
 #main-content a:hover{
     color: var(--color-white);
+}
+.col{
+    width: calc(100% / 6 - 20px);
 }
