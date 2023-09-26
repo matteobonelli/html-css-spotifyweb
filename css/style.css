@@ -97,6 +97,16 @@ img{
     width: 100%;
     display: block;
 }
+.bar{
+    background-color: var(--color-grey);
+    border-radius: 20px;
+    width: 100%;
+}
+.bar-played{
+    border: 2px solid var(--color-light-grey);
+    border-radius: 20px;
+    width: 20%;
+}
 /* flex */
 .d-flex{
     display: flex;
@@ -184,10 +194,7 @@ main{
 .icon-container img{
     opacity: 0.5;
 }
-.icons{
-    font-size: 1.5em;
-    padding-right: 3px;
-}
+
 .lateral-buttons{
     padding-bottom: 50%;
 }
@@ -270,5 +277,21 @@ main{
 /* playbar */
 
 .cover-container-playbar{
-    width: 13%;
+    width: 10%;
+}
+.fa-circle-play.icons{
+    font-size: 2.2em;
+}
+.icons{
+    font-size: 1.2em;
+    padding: 3px 15px;
+}
+.play-bar{
+    width: 600px;
+}
+.duration{
+    padding-top: 0;
+}
+.volume{
+    width: 300px;
 }
