@@ -176,6 +176,9 @@ main{
 .col{
     width: calc(100% / 6 - 20px);
 }
+.cover-container, .cover-container-rounded{
+    position: relative;
+}
 .row-2{
     width: calc(100% / 3 + 20px);
 }
@@ -187,4 +190,25 @@ main{
     max-height: 250px;
     border-radius: 50%;
     object-fit: cover;
+}
+.col:hover, .col-2:hover{
+    cursor: pointer;
+}
+.play-button{
+    display: none;
+    position: absolute;
+    top: 36%;
+    left: 37%;
+}
+.col:hover .cover-container img, .col-2:hover .cover-container img{
+    opacity: 0.5;
+}
+.col-2:hover .cover-container-rounded img{
+    opacity: 0.5;
+}
+.col:hover .play-button, .col-2:hover .play-button{
+    display: block;
+}
+.fa-regular.fa-circle-play{
+    font-size: 4.5em;
 }
