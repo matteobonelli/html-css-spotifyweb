@@ -114,10 +114,19 @@ img{
     width: 20%;
     
 }
+.horizontal-rule{
+    border: 1px solid var(--color-grey);
+}
 /* flex */
 .d-flex{
     display: flex;
     flex-flow: row nowrap;
+}
+.side-wrap{
+    flex-wrap: wrap;
+}
+.ac-sb{
+    align-content: space-between;
 }
 .justify-end{
     justify-content: flex-end;
@@ -126,7 +135,7 @@ img{
     align-items: center;
     align-content: center;
 }
-.aling-end{
+.align-end{
     align-items: end;
     align-content: end;
 }
@@ -197,6 +206,9 @@ main{
 .lateral-buttons-small{
     display: none;
 }
+.bottom-sidebar-small{
+    display: none;
+}
 .icon-container{
     width: 17%;
     padding-right: 5px;
@@ -204,15 +216,12 @@ main{
 .icon-container img{
     opacity: 0.5;
 }
+.bottom-sidebar .icon-container{
+    width: 10%;
+}
 
-.lateral-buttons{
-    padding-bottom: 50%;
-}
-.lateral-buttons-top li{
+.lateral-buttons-top li , .lateral-buttons-bottom li{
     padding: 5px 0;
-}
-.lateral-buttons-bottom li{
-    padding: 10px 0;
 }
 .lateral-buttons-top a{
     padding: 0px 15px;
@@ -236,8 +245,18 @@ main{
 .home img{
     opacity: 1;
 }
-
-
+.bottom-sidebar .img-container, .bottom-sidebar-small .img-container{
+    background-color: var(--color-grey);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.installa-app div:hover{
+    color: var(--color-white);
+    cursor: pointer;
+}
 /* main-content */
 #main-content ul{
     padding-bottom: 30px;
@@ -253,6 +272,7 @@ main{
 }
 .cover-container, .cover-container-rounded{
     position: relative;
+
 }
 .row-2{
     width: calc(100% / 3 + 20px);
@@ -272,8 +292,19 @@ main{
 .play-button{
     display: none;
     position: absolute;
-    top: 36%;
-    left: 37%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* display: none; */
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s;
+}
+.play-button i{
+    font-size: 3em;
 }
 .col:hover .cover-container img, .col-2:hover .cover-container img{
     opacity: 0.5;
@@ -282,11 +313,9 @@ main{
     opacity: 0.5;
 }
 .col:hover .play-button, .col-2:hover .play-button{
-    display: block;
+    opacity: 1;
 }
-.fa-regular.fa-circle-play{
-    font-size: 4.5em;
-}
+
 /* playbar */
 .song-playing{
     width: 300px;
@@ -427,5 +456,14 @@ main{
     }
     .icon-container-small{
         width: 30px;
+    }
+    .bottom-sidebar{
+        display:none
+    }
+    .bottom-sidebar-small{
+        display: block;
+    }
+    .bottom-sidebar-small .icon-container{
+        width: 100%;
     }
 }
