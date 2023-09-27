@@ -180,6 +180,7 @@ main{
     background-color: var(--color-black);
     width: 250px;
     height: 100%;
+    overflow-y: auto;
 }
 #main-content{
     background-color: var(--color-dark-color);
@@ -192,6 +193,7 @@ main{
 /* call-to-action */
 #call-to-action .btn{
     width: 200px;
+    transition: transform 1s;
 }
 #call-to-action .btn:hover{
     transform: scale(1.1);
@@ -225,6 +227,9 @@ main{
 }
 .lateral-buttons-top a{
     padding: 0px 15px;
+}
+.lateral-buttons-bottom{
+    overflow-y: auto ;
 }
 .home{
     color: var(--color-white);
@@ -321,6 +326,7 @@ main{
     width: 300px;
     min-width: 100px;
 }
+
 .cover-container-playbar{
     min-width: 30px;
     width: 60px;
