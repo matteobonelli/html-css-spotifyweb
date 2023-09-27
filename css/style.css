@@ -180,7 +180,6 @@ main{
     background-color: var(--color-black);
     width: 250px;
     height: 100%;
-    overflow-y: auto;
 }
 #main-content{
     background-color: var(--color-dark-color);
@@ -229,6 +228,7 @@ main{
     padding: 0px 15px;
 }
 .lateral-buttons-bottom{
+    height: calc(55vh - 90px);
     overflow-y: auto ;
 }
 .home{
@@ -467,9 +467,10 @@ main{
         display:none
     }
     .bottom-sidebar-small{
-        display: block;
+        display: flex;
     }
     .bottom-sidebar-small .icon-container{
         width: 100%;
+        padding-right: 3px;
     }
 }
