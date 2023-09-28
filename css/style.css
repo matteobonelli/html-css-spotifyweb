@@ -398,7 +398,7 @@ main{
 }
 
 /* media query */
-@media screen and (max-width:992px){
+@media screen and (max-width:1200px){
     .wrap{
         flex-wrap: wrap;
     }
@@ -420,7 +420,7 @@ main{
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:992px){
     .col{
         width: calc(100% / 2 - 20px);
     }
@@ -434,7 +434,7 @@ main{
         justify-content: center;
     }
 }
-@media screen and (max-width:576px){
+@media screen and (max-width:768px){
     #sidebar{
         background-color: var(--color-black);
         width: 50px;
@@ -475,3 +475,17 @@ main{
         padding-right: 3px;
     }
 }
+@media screen and (max-width:576px){
+    .cover-container-playbar{
+        display: none;
+    }
+    .like{
+        display: none;
+    }
+    .play-bar .fa-shuffle, .play-bar .fa-rotate-right{
+        display: none;
+    }
+    .volume .fa-list, .volume .fa-display{
+        display: none;
+    }
+}    
