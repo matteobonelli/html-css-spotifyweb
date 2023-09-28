@@ -488,4 +488,21 @@ main{
     .volume .fa-list, .volume .fa-display{
         display: none;
     }
+    .col{
+        width: calc(100% - 20px);
+    }
+    .col-2{
+        width: calc(100% - 20px);
+    }
+    .wrap-2{
+        flex-wrap: wrap;
+    }
+    .mx-0{
+        margin: 0 auto;
+    }
+    .cover-container-rounded{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 }    
